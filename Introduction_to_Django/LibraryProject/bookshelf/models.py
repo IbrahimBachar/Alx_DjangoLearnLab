@@ -9,7 +9,7 @@ class Book(models.Model):
     def __str__(self):
         return self.title
     
-    def list_filter(self):
+    def book_display(self):
         return f"{self.title} by {self.author} ({self.publication_year})"
     
     
