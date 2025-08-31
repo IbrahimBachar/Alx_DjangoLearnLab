@@ -1,2 +1,2 @@
-> > > Book.objects.get(title="1949")
-<Book: 1929>
+> > > Book.objects.get(title="1984")
+<Book: 1984>
