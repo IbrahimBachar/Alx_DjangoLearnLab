@@ -6,11 +6,11 @@ from django.http import HttpResponse
 #     return render(request, 'books.html')
 
 def bookView(request):
-    books = Book.objects.all()
+    relationship_app = Book.objects.all()
     context = {'list_books': books}
-    return render(request, 'books/list_books.html', context)
+    return render(request, 'relationship_app/list_books.html', context)
 
-class BookDetailView(DetailView):
+class BookDetailView(ViewDetail):
     model = Book
-    template_name = 'books/book_detail.html'
+    template_name = 'relationship_app/list_books.html'
     context_object_name = 'book'
