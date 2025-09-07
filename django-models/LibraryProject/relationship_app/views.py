@@ -2,7 +2,6 @@ from django.shortcuts import render
 from django.http import HttpResponse
 from .models import Library, Book, Author, Librarian
 from django.views.generic.detail import DetailView
-from .views import list_books
 
 # Create your views here.
 # def display_books(request):
