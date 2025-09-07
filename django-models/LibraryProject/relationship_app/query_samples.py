@@ -1,7 +1,7 @@
 #query all books for a specific author
 
-author = Author.objects.get(name="author_name")
-books_by_author = author.books.all()
+author = Author.objects.get(name=author_name)
+books_by_author = objects.filter(author=author)
 print(f"Books by {author.name}: {[book.title for book in books_by_author]}")
 
 #list all books in a library
